@@ -227,7 +227,7 @@ class Router
 
         // This is needed for ES6 modules. They do not use "?mod=" parameter and may be irrelevant
 
-        $isLighterCaching = system_extension_mime_type($file) === "text/javascript" && $queryParams && $queryParams["mod"] == null;
+        $isLighterCaching = system_extension_mime_type($file) === "text/javascript" && $queryParams["mod"] == null;
         if ($isLighterCaching) {
             header("Cache-Control: no-cache, max-age=3600");
         } else {
