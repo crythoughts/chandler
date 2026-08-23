@@ -346,7 +346,7 @@ class Router
 
             try {
                 parse_str($queryString, $queryParams);
-            } catch(\Throwable $e) {
+            } catch (\Throwable $e) {
                 $queryParams = [];
             }
 
